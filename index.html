@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Background Video</title>
   <style>
-    /* Make sure video fills the entire viewport */
     body, html {
       margin: 0;
       padding: 0;
@@ -23,6 +22,15 @@
       z-index: -1;
       object-fit: cover;
     }
+    #center-img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 30vw;    /* adjust as needed */
+      max-height: 30vh;
+      z-index: 1;
+    }
   </style>
 </head>
 <body>
@@ -30,5 +38,6 @@
     <source src="Future - LIL DEMON (Official Music Video) - FutureVEVO (720p, h264, youtube).mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
+  <img src="lh_logo.png" alt="Centered Image" id="center-img" />
 </body>
 </html>
