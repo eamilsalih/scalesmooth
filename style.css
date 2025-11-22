@@ -1,0 +1,10 @@
+#center-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Optional sizing */
+  max-width: 30vw;
+  max-height: 30vh;
+  z-index: 1; /* Ensures it sits above the video */
+}
